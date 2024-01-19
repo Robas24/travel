@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Travel Reservation Form</h1>
+    <form>
+      <label for="Name" id="name"
+        >Full Name: <br />
+        <input
+          type="text"
+          name="name"
+          maxlenght="35"
+          minlength="3"
+          required
+          size="30"
+          placeholder="Enter Your Name"
+        />
+      </label>
+      <br /><br />
+      <label for="email" id="email"
+        >Email: <br />
+        <input
+          type="email"
+          name="email"
+          required
+          size="30"
+          placeholder="Enter Your Email"
+        />
+      </label>
+      <br />
+      <br />
+      <label for="">
+        Select Tour Package <br />
+        <select name="selecttourpack" id="tourpack" required>
+          <option value="narankaghan">Naran Kaghan</option>
+          <option value="Neelum Valley Azad Kashmir.">
+            Neelum Valley Azad Kashmir.
+          </option>
+          <option value="Fairy Meadows Hunza.">Fairy Meadows Hunza.</option>
+          <option value="Skardu">Skardu</option>
+        </select></label
+      >
+      <br /><br />
+      <label for="Arrivaldate"
+        >Arrival Date: <br />
+        <input type="date"  required/>
+      </label>
+      <br /><br />
+      <label for="number"
+        >Phone: <br />
+        <input type="tel" size="30" required placeholder="Enter Your Number" />
+      </label>
+      <br><br>
+      <label for="avail">What would you want to avail? <br>
+        <input name="avail" value="Boarding" type="checkbox">Boarding <br>
+        <input name="avail" value="Boarding" type="checkbox">Fooding <br>
+        <input name="avail" value="Boarding" type="checkbox">Sight seeing <br>
+        <input name="avail" value="Boarding" type="checkbox">Hiking <br>
+      </label>
+      <br><br>
+      <label for="discountcode"> Discount Coupn Code: <br>
+        <input type="text" size="30" placeholder="Discount Coupon Code">
+      </label>
+      <br><br>
+     <p>Terms and Conditions</p>
+     <input type="radio" id="Iagree" name="term-condi" value="Iagree">
+     <label for="Iagree">
+        I agree
+     </label>
+     <input type="radio" id="Disagree" name="term-condi" value="Disagree">
+     <label for="Disagree">
+        I Disagree
+     </label>
+     <br><br>
+     <button>Complete Reservation</button>
+    </form>
+  </body>
+</html>
